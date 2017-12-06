@@ -7,10 +7,10 @@
 
 import codecs
 import json
-import sys
-
-reload(sys)
-sys.setdefaultencoding('utf8')
+# import sys
+#
+# reload(sys)
+# sys.setdefaultencoding('utf8')
 
 
 class DoubanNewMoviePipeline(object):

@@ -14,7 +14,16 @@ BOT_NAME = 'douban_new_movie'
 SPIDER_MODULES = ['douban_new_movie.spiders']
 NEWSPIDER_MODULE = 'douban_new_movie.spiders'
 
-
+ROBOTSTXT_OBEY = True
+HTTPCACHE_ENABLED = True
+ROBOTSTXT_OBEY = False
+USER_AGENT = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)"
+# DOWNLOADER_MIDDLEWARES = {
+#
+# 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+# }
+# USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5'
+# USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'douban_new_movie (+http://www.yourdomain.com)'
 
@@ -83,6 +92,6 @@ NEWSPIDER_MODULE = 'douban_new_movie.spiders'
 #HTTPCACHE_DIR='httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
-ITEM_PIPELINES={
-	'douban_new_movie.pipelines.DoubanNewMoviePipeline':300,
-}
+# ITEM_PIPELINES={
+# 	'douban_new_movie.pipelines.DoubanNewMoviePipeline':300,
+# }
